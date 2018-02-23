@@ -1,0 +1,344 @@
+1. horas de sueño
+INICIO
+    
+	leer dormir
+
+	leer despertar
+
+    
+Si ( dormir < despertar ) entonces
+
+        horasDormidas = 0 - dormir
+    
+	sino
+        horasDormidas = 12 - dormir
+    
+	fin-si
+    horasDormidas = horasDormidas + despertar
+
+    escribir horasDormidas
+
+FIN
+
+
+
+2. precio de super (sal, azucar, cereal, arroz, helado)
+Inicio
+	leer item1
+	leer item2
+	leer item3
+	leer item4
+	leer item5
+	GastoSuper = (item1+item2+item3+item4+item5)
+	escribir GastoSuper
+
+Fin
+3. presupuesto (ingreso1, ingreso2, gasto1, gasto2, gasto3)
+Inicio
+	leer ingreso1
+	leer ingreso2
+	leer gasto1
+	leer gasto2
+	leer gasto3
+	Ingresos = (ingreso1+ingreso2)
+	Gastos = (gasto1+gasto2+gasto3)
+	Presupuesto = (Ingresos-Gastos
+	escribir Ingresos
+	escribir Gastos
+	escribir Prsupuesto
+Fin
+4. Herencia a nietos (jose, juan, herencia)
+Inicio
+	leer DineroJose
+	leer DineroJuan
+	leer Herencia
+	Activos = (DineroJose+DineroJuan+Herencia)
+	escribir Activos
+Fin
+5. Memify (Valor startup) 2 socios
+Inicio
+	leer PrecioVenta
+	iva = 16%
+	PagoIva = (PrecioVenta*iva)
+	IngresoDI = (PrecioVenta-PagoIVA)
+	IngresoxSocio=IngresoDI/2
+	escribir IngresoxSocio
+Fin
+6. Compu Diego (compu)
+Inicio
+	leer Precio
+	iva = 16%
+	PagoIva = (Precio*iva)
+	PrecioNeto = (Precio+PagoIva)
+	escribir Precio
+	escribir PagoIva
+	escribir PrecioNeto
+Fin
+7. Restaurante (precio, individuos)
+Inicio
+	leer Cuenta
+	leer individuos
+	tip = 0.10
+	total = (Cuenta*(1+tip))
+	PagoxIndividuo = (Total/individuos)
+	escribir PagoxIndividuo
+Fin 
+8. Felicidad o hambre(hambre)
+Inicio
+	leer Hambre
+    
+Si ( hambre = TRUE ) entonces
+
+        Estado = "Triste"
+    Sino Estado = "Feliz"
+    Escribir Estado
+    Fin-Si
+Fin
+8. Soy en personaje en un videojuego, y dependiendo del nivel tengo cierto título: 
+Cuando empiezo soy “Aprendiz” si llego al nivel 10 evoluciono a “Acrobata”
+y si paso del nivel 20 me hago un “ninja” ¿Que soy actualmente?
+Inicio
+    leer Nivel
+    
+Si ( Nivel > 20 ) entonces
+
+        Avatar = "Ninja"
+    Si ( Nivel <= 20 and Nivel > 10) entonces
+
+        Avatar = "Acrobata"
+    Si ( Nivel <= 10 ) entonces
+
+        Avatar = "Aprendiz"
+    Fin-si 
+    Escribir Avatar
+Fin  
+   
+  
+o
+9. 3.- Vivo con varios roomies y siempre me roban la comida, 
+entonces le puse una contraseña al refrigerador. 
+Tienes que hacer un programa que valide si mi nombre es el correcto y si mi contraseña también
+Inicio
+	leer Password
+	leer Nombre
+	Si Nombre == "Edgar" entonces
+		Si Password = "Soloyo" ) entonces
+
+        	Candado = "Abierto"
+    	Sino Despliega = "ACCESO DENEGADO"
+	Fin-si
+
+Fin
+
+10. Tengo 3 examenes este semestre y mi papá me dijo que me daría un premio si tengo
+un promedio final de 8.5 o más, pero si repruebo me va a castigar.  ¿Cual fue mi destino?
+Inicio
+	leer Examen1, Examen2, Examen3
+	Promedio = (Examen1 + Examen2 + Examen3)
+    	Si ( Promedio >= 8.5 ) entonces
+
+        Destino = "Premio"
+	Sino Destino = "Castigo"
+	escribir Destino
+Fin 
+
+11. Estoy inscrito a muchas clases porque me gusta aprender: Los lunes y miércoles voy a Historia,
+los martes a natacion, los jueves a esgrima y los demás días descanso. 
+Dime a que clase voy si te digo un día.
+Inicio
+	Leer DIA
+	Segun sea DIA entonces
+		caso "Lunes" 
+			escribir ("Historia") 
+		fin-caso
+		caso "Martes" 
+			escribir ("Natacion")
+		fin-caso
+		caso "Miercoles"
+			escribir ("Historia") 
+		fin-caso
+		caso "Jueves" 
+			Escribir ("Esgrima")
+		fin caso
+		De lo contrario
+                	escribir("Descanso)
+   	Fin-segun
+Fin
+
+12.- Estoy jugando un juego de dados, gano si saco el mismo número en dos de los tres dados. 
+Descubre si gané o no.
+Inicio
+    leer Dado1, Dado2, Dado3
+    
+Si ( Dado1 = Dado2 o Dado1 = Dado3 o Dado2=Dado3 ) 
+
+        Resultado = "Ganaste"
+    
+Sino Resultado = "Perdiste"
+    Fin-si 
+    Escribir Resultado
+Fin
+
+13.- Paco hizo travesuras en el salón y la maestra lo castigó, 
+para poder salir tiene escribir en el pizarrón todos los números del num1 al num2, 
+¿puedes ayudarle a Paco a hacer un algoritmo que haga esto por el?
+Inicio
+	leer num1, num2      o 1 2 3 ...10 11 
+        Escribir num1
+        mientras num1 < num2
+		num1 + 1
+		Escribir num1
+	fin-mientras 
+Fin
+
+14. Anuar quiere hacer sus contraseñas más seguras, 
+se da cuenta que puede cambiar vocales por números a = 4, e = 3, i = 1, o = 0. 
+¿Podrías hacer un programa que reciba una contraseña, 
+la altere sustituyendo las vocales y al final la imprima?
+Inicio
+	Leer Password
+	Sustituir (Password,"a",4)
+	Sustituir (Password,"e",3)
+	Sustituir (Password,"i",1)
+	Sustituir (Password,"o",0)
+	Escribir Password
+Fin
+
+15.- Diego está haciendo un programa similar al de Anuar, 
+solamente que él no quiere sustituir vocales, 
+el quiere desaparecerlas, ¿puedes ayudarle?
+Inicio
+	Leer Password
+	Sustituir (Password,"a","")
+	Sustituir (Password,"e","")
+	Sustituir (Password,"i","")
+	Sustituir (Password,"o","")
+	Sustituir (Password,"u","")
+	Escribir Password
+Fin
+
+3.- Joel quiere hacer un programa que reciba una frase, 
+cambie los espacios por un guión bajo y al final imprima la frase original 
+y la alterada solo para corroborar resultados.
+Inicio
+	Leer Frase
+	Frase1 = Frase2
+	Sustituir (Frase2," ","_")
+	Escribir Frase1
+	Escribir Frase2
+Fin
+
+Inicio
+	Leer Peso
+	Leer Peso Ideal
+	Leer Cambio de peso
+	Si peso>peso_ideal entonces
+		diferencia_de_peso=peso-peso ideal
+	Si peso<peso_ideal entonces
+		diferencia_de_peso=peso ideal - peso
+	Sino
+		Escribe "Estas bien"
+	fin-si
+	Semanas = Diferencia_de_peso / cambio_de_peso
+	Escribir Semanas = semanas + "semanas"
+Fin
+
+Inicio
+	leer contraseña   anuar93
+    
+	tamaño_contraseña = contraseña.tamaño
+	Para contador = 0 hasta contador >= tamaño_contraseña aumenta 1
+
+		Segun sea contraseña[ contador ] entonces
+			caso “a”:
+
+				contraseña[ contador ] = 4
+
+		        fin-caso
+
+            		caso “e”:
+
+		                contraseña[ contador ] = 3
+
+            		fin-caso
+		        caso “i”:
+
+		                contraseña[contador] = 1
+
+		        fin-caso
+
+	                caso “o”:
+
+		                contraseña[contador] = 0
+	                fin-caso
+
+			caso default:
+	     
+           fin-caso
+
+        	fin-segun sea
+
+	fin-para
+
+    escribir contraseña
+
+FIN
+
+Inicio
+	leer contraseña   Diego93
+    
+	tamaño_contraseña = contraseña.tamaño
+	Para contador = 0 hasta contador >= tamaño_contraseña aumenta 1
+
+		Segun sea contraseña[ contador ] entonces
+			caso “a”:
+
+				contraseña[ contador ] = ""
+		        fin-caso
+
+            		caso “e”:
+
+		                contraseña[ contador ] = ""
+
+            		fin-caso
+		        caso “i”:
+
+		                contraseña[contador] = ""
+
+		        fin-caso
+
+	                caso “o”:
+
+	                	contraseña[contador] = "
+	                fin-caso
+
+	                caso “u”:
+
+	                	contraseña[contador] = "
+	                fin-caso
+
+			caso default:
+	     
+           fin-caso
+
+        	fin-segun sea
+
+	fin-para
+
+    escribir contraseña
+
+FIN
+
+Inicio
+	leer Frase   Frase larga de prueba
+    
+	tamaño_frase = frase.tamaño
+	Para contador = 0 hasta contador >= tamaño_frase aumenta 1
+
+		Si frase[ contador ] == “ ” entonces
+
+			frase[ contador ] = "_"
+		fin-si
+
+    escribir frase
+FIN

@@ -1,0 +1,56 @@
+button {
+  background-color: white;
+  border: 1px solid black;
+  border-radius: 10px;
+  color: black;
+  font-size: 25px;
+  padding: 10px;
+}
+button:hover {
+  background-color: darkblue;
+  color: white;
+}
+img {
+  width: 100px;
+  }
+body{
+  margin: 0;
+  padding: 0;
+}
+
+body {
+background-image: url("https://www.codejobs.biz/public/images/blog/original/b15beaff6977b6a.jpg");
+background-position: center center;
+background-repeat: no-repeat;
+background-attachment: fixed;
+background-size: cover;
+height: 100%;
+	}
+h1
+{
+    font-family: Verdana, Arial;
+    font-size: 18px;
+    color: white;
+}
+p
+{
+    font-family: Verdana, Arial;
+    font-size: 16px;
+    color: white;
+}
+a
+{
+    font-family: Verdana, Arial;
+    font-size: 16px;
+    color: white;
+}
+
+nav
+{
+  font-family: Verdana, Arial;
+  font-weight: bold;
+  font-size: 16px;
+  color: white;
+  float: right;
+  padding: 22px;
+}
